@@ -52,6 +52,8 @@ To run the unit tests, ndn-cxx needs to be built with unit test support and inst
 into the configured location.  For example:
 
     ./waf configure --with-tests # --debug is also strongly recommended while developing
+    Add -lcryptopp to list on line 488 in build/config.log file
+    Add cryptopp to LIB_OPENSSL in build/c4che/_cache.py
     ./waf
     sudo ./waf install
 
