@@ -120,6 +120,9 @@ Build
 To build in a terminal, change directory to the ndn-cxx root, then enter::
 
     ./waf configure
+    Optional for building with cryptopp++:
+    Add -lcryptopp to list on line 488 in build/config.log file
+    Add cryptopp to LIB_OPENSSL in build/c4che/_cache.py
     ./waf
     sudo ./waf install
 
